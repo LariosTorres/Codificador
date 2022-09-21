@@ -1,0 +1,36 @@
+body{
+    background-color: #E5E5E5;
+}
+.logotipo{
+    position: absolute;
+    left: 2%;
+    top: 3%;
+}
+img{
+    max-width: 31.085588455200195px;
+    max-height: 48px;
+}
+input[type=text]{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border: none;
+    border-bottom: 2px solid #0A3871;
+    background: none;
+    width: 350px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #0A3871;
+    caret-color: #0A3871;
+}
+::placeholder{
+    color: #0A3871;
+    text-align: center;
+    font-size: 30px;
+}
+input:focus::placeholder{
+ color: transparent;
+}
+input[type=text]:focus{
+    outline: none;
+}
