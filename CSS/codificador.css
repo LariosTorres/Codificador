@@ -18,7 +18,6 @@ textarea{
     border-bottom: 2px solid #0A3871;
     background: none;
     width: 350px;
-    max-width: 350px;
     padding-top: 10px;
     font-size: 30px;
     color: #0A3871;
@@ -118,16 +117,85 @@ textarea::-webkit-scrollbar-thumb{
     left: 0%;
 }
 @media only screen
+    and (min-device-width: 720px)
+    and (max-device-width: 911px){
+        textarea{
+        left: 5%;
+        height: 600px;
+    }
+    .img-advertencia{
+        left: 5%;
+    }
+    .label-advertencia{
+        left: 10%;
+    }
+    .resultado{
+        height: 75%;
+        width: 280px;
+        right: 4%;
+    }
+    .boton-azul{
+        width: 300px;
+        left: 5%;
+    }
+    .boton-gris{
+        width: 300px;
+        left: 53%;
+    }
+    .img-resultado{
+        width:100%;
+        max-width: fit-content;
+        height: 300px;
+        top: 40%;
+    }
+}
+@media only screen
+    and (min-device-width: 912px)
+    and (max-device-width: 1023px){
+        textarea{
+        left: 5%;
+        height: 600px;
+    }
+    .img-advertencia{
+        left: 5%;
+    }
+    .label-advertencia{
+        left: 10%;
+    }
+    .resultado{
+        height: 75%;
+        width: 400px;
+    }
+    .boton-azul{
+        width: 400px;
+        left: 3%;
+    }
+    .boton-gris{
+        width: 400px;
+        left: 53%;
+    }
+    .img-resultado{
+        width:400px;
+        height: 400px;
+        top: 40%;
+    }
+}
+@media only screen
     and (min-device-width: 1024px)
     and (max-device-width: 1279px){
+    textarea{
+        left: 5%;
+        height: 600px;
+        width: 570px;
+    }
     .resultado{
     height: 90%;
     }
     .boton-azul{
-        width: 200px;
+        width: 220px;
     }
     .boton-gris{
-        width: 200px;
+        width: 220px;
     }
     .img-resultado{
         top: 40%;
@@ -136,8 +204,14 @@ textarea::-webkit-scrollbar-thumb{
 @media only screen
     and (min-device-width: 1280px)
     and (max-device-width: 1439px){
+    textarea{
+    left: 5%;
+    height: 600px;
+    width: 700px;
+    }
     .resultado{
     height: 90%;
+    width: 400px;
     }
     .boton-azul{
         width: 300px;
@@ -146,14 +220,25 @@ textarea::-webkit-scrollbar-thumb{
         width: 300px;
     }
     .img-resultado{
+        top: 40%;
+    }
+    .img-resultado{
+        width:400px;
+        height: 400px;
         top: 40%;
     }
 }
 @media only screen
     and (min-device-width: 1400px)
     and (max-device-width: 1599px){
+    textarea{
+    left: 5%;
+    height: 600px;
+    width: 800px;
+    }
     .resultado{
-        height: 90%;
+    height: 90%;
+    width: 400px;
     }
     .boton-azul{
         width: 350px;
@@ -162,11 +247,18 @@ textarea::-webkit-scrollbar-thumb{
         width: 350px;
     }
     .img-resultado{
+        width:400px;
+        height: 400px;
         top: 40%;
     }
 }
 @media only screen
     and (min-device-width: 1600px){
+    textarea{
+    left: 5%;
+    height: 600px;
+    width: 1000px;
+    }
     .resultado{
         height: 90%;
     }
