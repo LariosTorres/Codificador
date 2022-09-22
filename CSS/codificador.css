@@ -1,36 +1,183 @@
-body{
-    background-color: #E5E5E5;
+html{
+    background-color: #F3F5FC;
 }
 .logotipo{
     position: absolute;
     left: 2%;
     top: 3%;
 }
-img{
+.alura-logo{
     max-width: 31.085588455200195px;
     max-height: 48px;
 }
-input[type=text]{
+textarea{
     position: absolute;
     top: 15%;
-    left: 15%;
+    left: 10%;
     border: none;
     border-bottom: 2px solid #0A3871;
     background: none;
     width: 350px;
+    max-width: 350px;
     padding-top: 10px;
     font-size: 30px;
     color: #0A3871;
     caret-color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    scrollbar-3dlight-color: #0A3871 ;
 }
 ::placeholder{
     color: #0A3871;
     text-align: center;
     font-size: 30px;
 }
-input:focus::placeholder{
+textarea:focus::placeholder{
  color: transparent;
 }
-input[type=text]:focus{
+textarea:focus{
     outline: none;
+}
+textarea::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #F3F5FC;
+}
+textarea::-webkit-scrollbar-thumb{
+    background: #0A3871;
+    border-radius: 10px;
+}
+.img-advertencia{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    max-width: 31.085588455200195px;
+    max-height: 48px;
+}
+.label-advertencia{
+    position: absolute;
+    bottom: 20%;
+    left: 13%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 12px;
+    font-size: 17px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+.boton-azul{
+    background: #0A3871;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.boton-gris{
+    background: #D8DFE8;
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.resultado{
+    position: absolute;
+    width: 350px;
+    height: 570px;
+    right: 4%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.img-resultado{
+    position: relative;
+    top: 25%;
+    left: 0%;
+}
+@media only screen
+    and (min-device-width: 1024px)
+    and (max-device-width: 1279px){
+    .resultado{
+    height: 90%;
+    }
+    .boton-azul{
+        width: 200px;
+    }
+    .boton-gris{
+        width: 200px;
+    }
+    .img-resultado{
+        top: 40%;
+    }
+}
+@media only screen
+    and (min-device-width: 1280px)
+    and (max-device-width: 1439px){
+    .resultado{
+    height: 90%;
+    }
+    .boton-azul{
+        width: 300px;
+    }
+    .boton-gris{
+        width: 300px;
+    }
+    .img-resultado{
+        top: 40%;
+    }
+}
+@media only screen
+    and (min-device-width: 1400px)
+    and (max-device-width: 1599px){
+    .resultado{
+        height: 90%;
+    }
+    .boton-azul{
+        width: 350px;
+    }
+    .boton-gris{
+        width: 350px;
+    }
+    .img-resultado{
+        top: 40%;
+    }
+}
+@media only screen
+    and (min-device-width: 1600px){
+    .resultado{
+        height: 90%;
+    }
+    .boton-azul{
+        width: 450px;
+    }
+    .boton-gris{
+        width: 450px;
+        left: 40%;
+    }
+    .img-resultado{
+        top: 40%;
+    }
 }

@@ -10,8 +10,15 @@
         <link rel="shortcut icon" href="Alura.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="logotipo"><img src="Alura.png"></div>
-        <input type="text" placeholder="Ingrese el texto aqui">
+        <div class="logotipo"><img class="alura-logo" src="Alura.png"></div>
+        <textarea name="texto" id="texto-encriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <img class="img-advertencia" src="warning sign.png" alt="Señal de advertencia">
+        <label for="text" class="label-advertencia">Solo letras minúsculas y sin acentos</label>
+        <button class="boton-azul">Encriptar</button>
+        <button class="boton-gris">Desencriptar</button>
         <script src="" async defer></script>
+        <div class="resultado">
+            <img class="img-resultado" src="imagen-resultado.png" alt="Image decorativa">
+        </div>
     </body>
 </html>
