@@ -1,5 +1,5 @@
-/* Separacion de codigo */
-/* Estilos base del codificador creado en una resolucion de 1366 x 768 px*/
+/* Separación de código */
+/* Estilos base del codificador creado en una resolución de 1366 x 768 px*/
 html{
     background-color: #F3F5FC;
 }
@@ -47,7 +47,7 @@ textarea::-webkit-scrollbar {
 }
 /* Estilo para definir el color de fondo del Scrollbar */
 textarea::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px #f4fcf3;
+    box-shadow: inset 0 0 6px #f4fcf3;
 }
 /* Estilo para redondear y dar un color especifico al Scrollbar */
 textarea::-webkit-scrollbar-thumb{
@@ -122,7 +122,7 @@ textarea::-webkit-scrollbar-thumb{
     top: 25%;
     left: 0%;
 }
-/* Adaptacion de los estilos base para el diseño responsivo en una resolucion de 720 a 912 px de ancho */
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 720 a 912 px de ancho */
 @media only screen
     and (min-device-width: 720px)
     and (max-device-width: 912px){
@@ -156,7 +156,7 @@ textarea::-webkit-scrollbar-thumb{
         top: 40%;
     }
 }
-/* Adaptacion de los estilos base para el diseño responsivo en una resolucion de 912 a 1024 px de ancho */
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 912 a 1024 px de ancho */
 @media only screen
     and (min-device-width: 912px)
     and (max-device-width: 1024px){
@@ -188,7 +188,7 @@ textarea::-webkit-scrollbar-thumb{
         top: 40%;
     }
 }
-/* Adaptacion de los estilos base para el diseño responsivo en una resolucion de 1024 a 1280 px de ancho */
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 1024 a 1280 px de ancho */
 @media only screen
     and (min-device-width: 1024px)
     and (max-device-width: 1280px){
@@ -210,7 +210,7 @@ textarea::-webkit-scrollbar-thumb{
         top: 40%;
     }
 }
-/* Adaptacion de los estilos base para el diseño responsivo en una resolucion de 1280 a 1440 px de ancho */
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 1280 a 1440 px de ancho */
 @media only screen
     and (min-device-width: 1280px)
     and (max-device-width: 1440px){
@@ -238,7 +238,7 @@ textarea::-webkit-scrollbar-thumb{
         top: 40%;
     }
 }
-/* Adaptacion de los estilos base para el diseño responsivo en una resolucion de 1400 a 1600 px de ancho */
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 1400 a 1600 px de ancho */
 @media only screen
     and (min-device-width: 1400px)
     and (max-device-width: 1600px){
@@ -263,7 +263,7 @@ textarea::-webkit-scrollbar-thumb{
         top: 40%;
     }
 }
-/* Adaptacion de los estilos base para el diseño responsivo en una resolucion de 1600 px de ancho, *Incluye culquier resolucion superor* */
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 1600 px de ancho, *Incluye cualquier resolución superior* */
 @media only screen
     and (min-device-width: 1600px){
     textarea{
