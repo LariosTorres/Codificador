@@ -7,16 +7,56 @@ html, body{
     background-color: #F3F5FC;
     height: 100%;
 }
+/* División de la página usando Flexbox para crear 3 filas/columnas según sea la resolución del dispositivo */
+/* Primera fila/columna, ubicada en el lado izquierdo, su única función es contener al logotipo de Alura */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+/* Segunda fila/columna, ubicada en el lado central de la página, su función es contener al textarea, la advertencia y los botones para codificar y decodificar */
+.flex-item-left{
+    width: 5%;
+    height: 100%;
+}
+/* Segunda fila/columna, ubicada en el lado central de la página, su función es contener al textarea, la advertencia y los botones para codificar y decodificar */
+.flex-item-center{
+    width: 50%;
+    height: 100%;
+    display: block;
+    align-content: space-between;
+}
+/* Tercer y última fila/columna, ubicada en el lado derecho de la página, su función es contener al párrafo donde se mostrará el mensaje codificado y una imagen decorativa */
+.flex-item-right{
+    width: 35%;
+    height: 100%;
+}
+/* Logotipo de Alura, ubicado en la primera fila/columna del flexbox */
 .alura-logo{
     max-width: 31px;
     max-height: 48px;
     margin-left: 5%;
     margin-top: 5%;
 }
+/* División en 3 de la fila/columna central */
+/* Primera división de la fila/columna central, contiene al textarea donde el usuario introducirá su mensaje */
 .textarea-div{
     height: 66%;
     margin-bottom: 4%;
 }
+/* Segunda división de la fila/columna central, contiene una imagen y texto de advertencia */
+.advertencia-div{
+    height: 5%;
+    display:inline-flex;
+    width: 100%;
+}/* Tercer y ultima división de la fila/columna central, contiene el área donde se mostrara el mensaje codificado y una imagen decorativa */
+.button-div{
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Textarea en donde el usuario ingresara su mensaje a codificar */
 textarea{
     position: relative;
     width:100%;
@@ -59,16 +99,13 @@ textarea::-webkit-scrollbar-thumb{
     background: #0A3871;
     border-radius: 10px;
 }
-.advertencia-div{
-    height: 5%;
-    display:inline-flex;
-    width: 100%;
-}
+/* Imagen que complementa al mensaje de advertencia */
 .img-advertencia{
     position: relative;
     max-width: 31px;
     max-height: 31px;
 }
+/* Mensaje de advertencia al usuario */
 .advertencia{
     position: relative;
     margin-left: 2%;
@@ -80,11 +117,7 @@ textarea::-webkit-scrollbar-thumb{
     color: #495057;
     opacity: 0.8;
 }
-.button-div{
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-}
+/* Boton azul con el cual el usuario hara que su mensaje sea codificado */
 .boton-azul{
     background: #0A3871;
     position: relative;
@@ -99,6 +132,7 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 16px;
     line-height: 19px;
 }
+/* Boton gris con el cual el usuario hara que su mensaje sea decodificado */
 .boton-gris{
     background: #D8DFE8;
     position: relative;
@@ -114,6 +148,7 @@ textarea::-webkit-scrollbar-thumb{
     line-height: 19px;
     text-align: center;
 }
+/* Sección principal de la 3er fila/columna en donde se mostrara el mensaje codificado u decodificado */
 .resultado{
     position: relative;
     background: #FFFFFF;
@@ -127,31 +162,11 @@ textarea::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
 }
+/* Imagen decorativa que acompañara al mensaje codificado u decodificado */
 .img-resultado{
     position: relative;
     width: 65%;
     height: 50%;
-}
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 100%;
-}
-  
-.flex-item-left{
-    width: 5%;
-    height: 100%;
-}
-.flex-item-center{
-    width: 50%;
-    height: 100%;
-    display: block;
-    align-content: space-between;
-}
-.flex-item-right{
-    width: 35%;
-    height: 100%;
 }
 /* Adaptación de los estilos base para el diseño responsivo en una resolución de 720 a 912 px de ancho */
 @media only screen
