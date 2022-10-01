@@ -162,27 +162,50 @@ textarea::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
 }
-.mensaje-div{
-    width: 100%;
-    height: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .imagen-decorativa-div{
     width: 100%;
-    height: 40%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* Imagen decorativa que acompañara al mensaje codificado u decodificado */
-.img-resultado{
-    position: relative;
+.div-mensaje1{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
 }
-/* Adaptación de los estilos base para el diseño responsivo en una resolución de 720 a 912 px de ancho */
+.mensajes1{
+    color: #343A40;
+    text-align: center;
+    width: 220px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+}
+.div-mensaje2{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.mensajes2{
+    width: 220px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+/* Adaptación de los estilos base para el diseño responsivo en una resolución de 280 a 912 px de ancho */
 @media only screen
-    and (min-device-width: 270px)
+    and (min-device-width: 280px)
     and (max-device-width: 912px){
         .flex-container {
             display: flex;
