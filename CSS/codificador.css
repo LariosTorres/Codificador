@@ -57,7 +57,7 @@ html, body{
     justify-content: space-between;
 }
 /* Textarea en donde el usuario ingresara su mensaje a codificar */
-textarea{
+.textarea-mensaje{
     position: relative;
     width:100%;
     height: 95%;
@@ -71,6 +71,7 @@ textarea{
     caret-color: #0A3871;
     font-family: 'Inter';
     font-style: normal;
+    text-transform: lowercase;
 }
 /* Estilo para dar formato al placeholder del textarea */
 ::placeholder{
@@ -80,7 +81,7 @@ textarea{
 }
 /* Estilo para volver transparente al placeholder cuando se de clic en el textarea */
 textarea:focus::placeholder{
- color: transparent;
+    color: transparent;
 }
 /* Estilo para quitar los bordes negros del textarea al dar clic al mismo */
 textarea:focus{
@@ -148,6 +149,12 @@ textarea::-webkit-scrollbar-thumb{
     line-height: 19px;
     text-align: center;
 }
+.boton-azul:active{
+    background: #072850;
+}
+.boton-gris:active{
+    background: #b2b7be; 
+}
 /* Sección principal de la 3er fila/columna en donde se mostrara el mensaje codificado u decodificado */
 .resultado{
     position: relative;
@@ -202,6 +209,63 @@ textarea::-webkit-scrollbar-thumb{
     line-height: 150%;
     text-align: center;
     color: #495057;
+}
+/* Posicion del div que mostrara el mensaje codificado */
+.con-mensaje-div-off{
+    visibility: hidden;
+    height: 0%;
+}
+.con-mensaje-div-on{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+.con-mensaje{
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    max-width: 100%;
+    height: 80%;
+    max-height: 80%;
+}
+.mensaje-codificado{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: transparent;
+    border: 0px;
+    color: #495057;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+.boton-copiar{
+    background: #FFFFFF;
+    position: relative;
+    top: 5%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 80%;
+    height: 50px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.boton-copiar:active{
+    background: #e4e3e3; 
 }
 /* Adaptación de los estilos base para el diseño responsivo en una resolución de 280 a 912 px de ancho */
 @media only screen
@@ -281,16 +345,16 @@ textarea::-webkit-scrollbar-thumb{
             justify-content: center;
             align-items: center;
         }
-        .mensaje-div{
+        .sin-mensaje{
             width: 100%;
-            height: 240px;
-            display: flex;
+            height: auto;
+            display: block;
             justify-content: center;
             align-items: center;
         }
         .imagen-decorativa-div{
-            width: 100%;
-            height: 355px;
+            width: auto;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;

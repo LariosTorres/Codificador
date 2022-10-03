@@ -16,31 +16,42 @@
             </div>
             <div class="flex-item-center">
                 <div class="textarea-div">
-                    <textarea name="texto" id="texto-encriptar" placeholder="Ingrese el texto aqui"></textarea>
+                    <textarea class="textarea-mensaje" name="texto" id="texto-encriptar" placeholder="Ingrese el texto aqui" onkeypress="return soloLetras(event)"></textarea>
                 </div>
                 <div class="advertencia-div">
                     <img class="img-advertencia" src="warning sign.png" alt="Señal de advertencia">
                     <p class="advertencia">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="button-div">
-                    <button class="boton-azul">Encriptar</button>
-                    <button class="boton-gris">Desencriptar</button>
+                    <button class="boton-azul" id="encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-gris" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
                 </div>
             </div>
             <div class="flex-item-right">
                 <div class="resultado">
-                    <div class="imagen-decorativa-div">
-                        <img class="img-resultado" src="imagen-resultado.png" alt="Image decorativa">
+                    <!-- Separacion de codigo, el siguiente codigo es el que se mostrara por defecto, en el cual mostrara que no hay ningun mensaje codificado -->
+                    <div class="sin-mensaje" id="sin-mensaje">
+                        <div class="imagen-decorativa-div">
+                            <img class="img-resultado" src="imagen-resultado.png" alt="Image decorativa" >
+                        </div>
+                        <div class="div-mensaje1">
+                            <p class="mensajes1">Ningún mensaje fue encontrado</p>
+                        </div>
+                        <div class="div-mensaje2">
+                            <p class="mensajes2">Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>    
                     </div>
-                    <div class="div-mensaje1">
-                        <p class="mensajes1">Ningún mensaje fue encontrado</p>
-                    </div>
-                    <div class="div-mensaje2">
-                        <p class="mensajes2">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <!-- Separacion de codigo, el siguiente codigo es el que se mostrara una vez que el usuario decida codificar un mensaje -->
+                    <div class="con-mensaje-div-off" id="con-mensaje-div-off">
+                        <div class="con-mensaje" id="con-mensaje">
+                            <textarea class="mensaje-codificado" name="mensaje-texto" id="mensaje-codificado"rows="5" cols="50" disabled></textarea>
+                        </div>
+                        <button class="boton-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
                     </div>
                 </div>
             </div>
         </div>
         <script src="codificador.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.8.6/clipboard-polyfill.js"></script>
     </body>
 </html>
