@@ -118,7 +118,7 @@ textarea::-webkit-scrollbar-thumb{
     color: #495057;
     opacity: 0.8;
 }
-/* Boton azul con el cual el usuario hara que su mensaje sea codificado */
+/* Botón azul con el cual el usuario hara que su mensaje sea codificado */
 .boton-azul{
     background: #0A3871;
     position: relative;
@@ -133,7 +133,7 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 16px;
     line-height: 19px;
 }
-/* Boton gris con el cual el usuario hara que su mensaje sea decodificado */
+/* Botón gris con el cual el usuario hara que su mensaje sea decodificado */
 .boton-gris{
     background: #D8DFE8;
     position: relative;
@@ -210,7 +210,7 @@ textarea::-webkit-scrollbar-thumb{
     text-align: center;
     color: #495057;
 }
-/* Posicion del div que mostrara el mensaje codificado */
+/* Posición del div que mostrara el mensaje codificado */
 .con-mensaje-div-off{
     visibility: hidden;
     height: 0%;
